@@ -6,45 +6,6 @@ Code for **Agentic AI Training** — a collection of hands-on Python modules cov
 
 The repo is organized as a sequence of training modules, each demonstrating a specific building block of agentic AI systems, from simple structured-output agents to multi-tool, memory-aware agents with guardrails and a full capstone use case.
 
-## Repository Structure
-
-```
-AgenticAI/
-├── Capstone/                                          # Capstone project assets
-├── chroma_db/                                         # Local ChromaDB vector store (used by RAG modules)
-├── ebooks/                                             # Source documents used for RAG ingestion
-├── Compression.py                                      # Prompt/context compression example
-├── G-Eval.py                                           # LLM-based evaluation (G-Eval) example
-├── Module2.py                                          # Structured-output agent (executive assistant / action-item extractor)
-├── Module2.1.py                                        # Module 2 follow-up exercise
-├── Module2.2.py                                        # Module 2 follow-up exercise
-├── Module2.3 - mem.py                                  # Adding memory to an agent
-├── Module2.4 - mem-tools.py                            # Memory + tool-calling agent
-├── Module2.5 - mem - guardrail.py                      # Memory + tool-calling agent with guardrails
-├── Module 3 - RAG with Langchain.py                    # RAG pipeline using LangChain
-├── Module 3 - RAG with Langchain-Local.py               # RAG pipeline using LangChain with a local model
-├── Module 3 - RAG with Langchain-Local.-obsevabilitypy.py  # Local RAG pipeline with observability/tracing
-├── Module 5 - Capstone Project.py                       # Capstone agentic application
-├── Module 5 - Leave Management System.py                # Capstone-style applied example: agentic leave management
-├── agent1_lead_sourcer.py                               # Agent example: automated lead sourcing
-├── onedrive_connect.py                                  # Utility: connecting an agent/tool to OneDrive
-└── README.md
-```
-
-> Note: file names mirror the order in which topics are taught during the training; module numbers are not strictly sequential by filename order in GitHub's default sort.
-
-## What Each Module Covers
-
-- **Module 2 series** — Building agents with structured outputs (Pydantic schemas via OpenAI's API), then progressively adding memory, tool calling, and guardrails.
-- **Module 3 series** — Retrieval-Augmented Generation (RAG) using LangChain, including a cloud-model version, a local-model version, and a version instrumented for observability.
-- **Module 5 series** — Capstone-style applied projects, including a full capstone project and an agentic Leave Management System example.
-- **Compression.py** — Techniques for compressing prompts/context to reduce token usage.
-- **G-Eval.py** — Using an LLM as an evaluator (G-Eval pattern) to score agent or model outputs.
-- **agent1_lead_sourcer.py** — A standalone agent example for sourcing leads.
-- **onedrive_connect.py** — Helper script for integrating an agent with OneDrive as a data/tool source.
-- **chroma_db/** — Local vector store used by the RAG modules.
-- **ebooks/** — Sample documents used as the knowledge base for RAG examples.
-- **Capstone/** — A full multi-agent WAM (Wealth and Asset Management) Agentic Platform built with LangGraph: a lead-sourcing agent, an investment-suggestion agent, and a portfolio-diversification agent, orchestrated as a stateful graph and exposed via a FastAPI REST API. See Capstone/README.md for full details.
 
 ## Prerequisites
 
