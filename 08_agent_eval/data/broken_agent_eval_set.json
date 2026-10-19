@@ -1,0 +1,12 @@
+[
+  {"id": 1, "query": "What is the delivery date for order ORD-1234?", "expected_type": "factual_order", "should_fail_bug": "FM-6"},
+  {"id": 2, "query": "What is the delivery date for order ORD-5678?", "expected_type": "factual_order", "should_fail_bug": "FM-6"},
+  {"id": 3, "query": "I want to return this product.", "expected_type": "policy_lookup", "should_fail_bug": "FM-3"},
+  {"id": 4, "query": "Can I return a purchase made 45 days ago?", "expected_type": "policy_lookup", "should_fail_bug": "FM-3"},
+  {"id": 5, "query": "I'm calling about the order I mentioned 10 turns ago.", "expected_type": "context_recall", "should_fail_bug": "FM-2"},
+  {"id": 6, "query": "How do I reset my password?", "expected_type": "general_faq", "should_fail_bug": null},
+  {"id": 7, "query": "What are your support hours?", "expected_type": "general_faq", "should_fail_bug": null},
+  {"id": 8, "query": "How do I upgrade my plan?", "expected_type": "general_faq", "should_fail_bug": null},
+  {"id": 9, "query": "What payment methods do you accept?", "expected_type": "general_faq", "should_fail_bug": null},
+  {"id": 10, "query": "Can I cancel my subscription anytime?", "expected_type": "general_faq", "should_fail_bug": null}
+]
